@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fff;
+    --gray900: #121214;
+    --gray800: #202024;
+    --gray300: #c4c4cc;
+    --gray100: #e1e1e6;
+
+    --green500: #00875f;
+    --green300: #00b37e;
+    
+    --md: 1.125rem;
+    --lg: 1.25rem;
+    --xl: 1.5rem;
+    --2xl: 2rem;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--gray900);
+    color: var(--gray100);
+}
+
+body, input, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+}

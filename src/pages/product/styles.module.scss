@@ -1,0 +1,88 @@
+.product {
+    max-width: 1180px;
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 4rem;
+    
+    .imageContainer {
+        width: 100%;
+        max-width: 576px;
+        height: calc(656px - 0.5rem);
+        
+        background: linear-gradient(
+            180deg, #1ea483 0%, #7465d4 100% );
+        padding: 0.25rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            
+        border-radius: 8px;
+        
+        img {
+            object-fit: cover;
+        }
+    }
+    
+    .productDetails {
+        display: flex;
+        flex-direction: column;
+        
+        h1 {
+            font-size: var(--2xl);
+            color: var(--gray300);
+        }
+        
+        span {
+            margin-top: 1rem;
+            display: block;
+            
+            font-size: var(--2xl);
+            color: var(--green300);
+        }
+        
+        p {
+            margin-top: 2.51rem;
+            
+            line-height: 1.6;
+            font-size: var(--md);
+            color: var(--gray300);
+        }
+        
+        button[type=button] {
+            margin-top: auto;
+            
+            background-color: var(--green500);
+            padding: 1.25rem;
+            
+            cursor: pointer;
+            color: var(--white);
+            font-size: var(--md);
+            font-weight: 700;
+            
+            border: 2px solid transparent;
+            border-radius: 8px;
+            transition: 
+                background-color 0.3s ease-in-out,
+                border-color 0.3s ease-in-out;
+            
+            &:not(:disabled):hover {
+                background-color: var(--green300);
+            }
+            
+            &:not(:disabled):focus {
+                outline: none;
+                background-color: var(--green300);
+                border-color: var(--white);
+            }
+            
+            &:disabled {
+                opacity: 0.75;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

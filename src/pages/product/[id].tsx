@@ -40,7 +40,7 @@ export default function Product({ product }: ProductProps) {
     return (
         <React.Fragment>
             <Head>
-                <title>{product.name} - Ignite Shop</title>
+                <title>Ignite Shop</title>
             </Head>
             
             <main className={styles.product}>

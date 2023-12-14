@@ -40,7 +40,7 @@ export default function Product({ product }: ProductProps) {
     return (
         <React.Fragment>
             <Head>
-                <title>Ignite Shop</title>
+                <title>{product.name} - Ignite Shop</title>
             </Head>
             
             <main className={styles.product}>
@@ -78,7 +78,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
         paths: [{
             params: { id: 'prod_Osx1y7tvkglcD9'}
         }],
-        fallback: true
+        fallback: 'blocking'
     }
 }
 
